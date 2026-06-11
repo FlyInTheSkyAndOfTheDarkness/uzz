@@ -35,8 +35,8 @@
     s:document.getElementById('cd-seconds')
   };
   if(cd.d){
-    // Countdown to 17 August 2026, 19:00 Atyrau/Almaty (UTC+5)
-    const target=new Date('2026-08-17T19:00:00+05:00');
+    // Countdown to 15 August 2026, 19:00 Atyrau/Almaty (UTC+5)
+    const target=new Date('2026-08-15T19:00:00+05:00');
     function tick(){
       const diff=target-new Date();
       if(diff<=0){cd.d.textContent=cd.h.textContent=cd.m.textContent=cd.s.textContent='0';return}

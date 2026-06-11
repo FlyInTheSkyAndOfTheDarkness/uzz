@@ -17,6 +17,14 @@
   font-weight: normal; font-style: normal; font-display: block;
 }
 
+/* Скрипт-шрифт: отключаем контекстные росчерки/альтернативы,
+   чтобы iOS (WebKit) рендерил так же спокойно, как Chrome. */
+.cover-name,.hero-name-script,.hero-sign{
+  font-feature-settings:"calt" 0,"clig" 0,"dlig" 0,"init" 0,"fina" 0,"medi" 0,"salt" 0,"ss01" 0,"ss02" 0,"ss03" 0;
+  -webkit-font-feature-settings:"calt" 0,"clig" 0,"dlig" 0,"init" 0,"fina" 0,"medi" 0,"salt" 0,"ss01" 0,"ss02" 0,"ss03" 0;
+  font-variant-ligatures:no-contextual;
+}
+
 :root {
   --gold: #654132;
   --gold-light: #8b6b5a;
